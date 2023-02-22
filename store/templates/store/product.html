@@ -1,0 +1,29 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-6">
+        <img style="height:170%;" class="thumbnail" src="{% static 'images/placeholder.png' %}">
+    </div>  
+    
+    <div class="col-lg-6">
+        <div class="box-element">
+            <a  class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue shopping</a>
+				<hr>
+                <div>
+				<h3>Product</h3>
+                <h5>£30</h5>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book.
+				</div>
+                <div class="box-element">
+				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+                <img  id="cart-icon" src="{% static 'images/like.png' %}"> 
+                </div>    
+        </div>
+    </div>    
+</div>
+
+{% endblock content %}
